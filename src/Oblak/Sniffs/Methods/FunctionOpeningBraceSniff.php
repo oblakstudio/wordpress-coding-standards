@@ -39,7 +39,12 @@ class FunctionOpeningBraceSniff implements Sniff
     {
         $tokens = $phpcsFile->getTokens();
 
-        $openBrace = $tokens[$stackPtr]['scope_opener'];
+        $openBrace = $tokens[$stackPtr]['scope_opener'] ?? false;
+
+        if (!$openBrace) { //probably an interface
+            return;
+        }
+
         $nextContent = $phpcsFile->findNext(T_WHITESPACE, ($openBrace + 1), null, true);
         $found = ($tokens[$nextContent]['line'] - $tokens[$openBrace]['line'] - 1);
 
