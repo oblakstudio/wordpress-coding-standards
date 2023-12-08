@@ -88,6 +88,17 @@
         <severity>0</severity>
     </rule>
 
+    <rule ref="WordPress">
+        <exclude name="Generic.WhiteSpace.DisallowSpaceIndent" />
+    </rule>
+    <rule ref="Generic.WhiteSpace.ScopeIndent">
+        <properties>
+            <property name="indent" value="4"/>
+            <property name="tabIndent" value="false"/>
+        </properties>
+    </rule>
+    <rule ref="Generic.WhiteSpace.DisallowTabIndent" />
+
     <!--
     #############################################################################
     Remove spacing after function open
