@@ -88,6 +88,7 @@
         <severity>0</severity>
     </rule>
 
+    <!-- Enforce the rule -->
     <rule ref="WordPress">
         <exclude name="Generic.WhiteSpace.DisallowSpaceIndent" />
     </rule>
