@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/oblakstudio/wordpress-coding-standards/compare/v1.0.0...v1.0.1) (2023-12-09)
+
+
+### Bug Fixes
+
+* Enforce space indent ([f3267f5](https://github.com/oblakstudio/wordpress-coding-standards/commit/f3267f584ad4f729bcd0b648a498b7ebb45cba35))
+
 # 1.0.0 (2023-08-24)
 
 
