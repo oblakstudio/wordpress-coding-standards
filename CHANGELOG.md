@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/oblakstudio/wordpress-coding-standards/compare/v1.0.1...v1.0.2) (2024-01-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency squizlabs/php_codesniffer to v3.8.1 ([7e00221](https://github.com/oblakstudio/wordpress-coding-standards/commit/7e002217a6b3fbf1acbae753265f492190888ee5))
+
 ## [1.0.1](https://github.com/oblakstudio/wordpress-coding-standards/compare/v1.0.0...v1.0.1) (2023-12-09)
 
 
