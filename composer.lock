@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "0ad3299284744e65e6f66245865edb3c",
+  "content-hash": "a3d293d463c6c31cc4bdabaef0ad8d55",
   "packages": [
     {
       "name": "dealerdirect/phpcodesniffer-composer-installer",
@@ -43,7 +43,9 @@
         }
       },
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["MIT"],
+      "license": [
+        "MIT"
+      ],
       "authors": [
         {
           "name": "Franck Nijhof",
@@ -112,7 +114,9 @@
       },
       "type": "phpcodesniffer-standard",
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["LGPL-3.0-or-later"],
+      "license": [
+        "LGPL-3.0-or-later"
+      ],
       "authors": [
         {
           "name": "Wim Godden",
@@ -131,7 +135,11 @@
       ],
       "description": "A set of sniffs for PHP_CodeSniffer that checks for PHP cross-version compatibility.",
       "homepage": "http://techblog.wimgodden.be/tag/codesniffer/",
-      "keywords": ["compatibility", "phpcs", "standards"],
+      "keywords": [
+        "compatibility",
+        "phpcs",
+        "standards"
+      ],
       "support": {
         "issues": "https://github.com/PHPCompatibility/PHPCompatibility/issues",
         "source": "https://github.com/PHPCompatibility/PHPCompatibility"
@@ -166,7 +174,9 @@
       },
       "type": "phpcodesniffer-standard",
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["LGPL-3.0-or-later"],
+      "license": [
+        "LGPL-3.0-or-later"
+      ],
       "authors": [
         {
           "name": "Wim Godden",
@@ -220,7 +230,9 @@
       },
       "type": "phpcodesniffer-standard",
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["LGPL-3.0-or-later"],
+      "license": [
+        "LGPL-3.0-or-later"
+      ],
       "authors": [
         {
           "name": "Wim Godden",
@@ -280,7 +292,9 @@
         }
       },
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["LGPL-3.0-or-later"],
+      "license": [
+        "LGPL-3.0-or-later"
+      ],
       "authors": [
         {
           "name": "Juliette Reinders Folmer",
@@ -341,10 +355,14 @@
         }
       },
       "autoload": {
-        "classmap": ["PHPCSUtils/"]
+        "classmap": [
+          "PHPCSUtils/"
+        ]
       },
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["LGPL-3.0-or-later"],
+      "license": [
+        "LGPL-3.0-or-later"
+      ],
       "authors": [
         {
           "name": "Juliette Reinders Folmer",
@@ -407,11 +425,15 @@
       "type": "library",
       "autoload": {
         "psr-4": {
-          "PHPStan\\PhpDocParser\\": ["src/"]
+          "PHPStan\\PhpDocParser\\": [
+            "src/"
+          ]
         }
       },
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["MIT"],
+      "license": [
+        "MIT"
+      ],
       "description": "PHPDoc parser with support for nullable, intersection and generic types",
       "support": {
         "issues": "https://github.com/phpstan/phpdoc-parser/issues",
@@ -460,9 +482,14 @@
         }
       },
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["MIT"],
+      "license": [
+        "MIT"
+      ],
       "description": "Slevomat Coding Standard for PHP_CodeSniffer complements Consistence Coding Standard by providing sniffs with additional checks.",
-      "keywords": ["dev", "phpcs"],
+      "keywords": [
+        "dev",
+        "phpcs"
+      ],
       "support": {
         "issues": "https://github.com/slevomat/coding-standard/issues",
         "source": "https://github.com/slevomat/coding-standard/tree/8.14.1"
@@ -502,7 +529,10 @@
       "require-dev": {
         "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.3.4"
       },
-      "bin": ["bin/phpcbf", "bin/phpcs"],
+      "bin": [
+        "bin/phpcbf",
+        "bin/phpcs"
+      ],
       "type": "library",
       "extra": {
         "branch-alias": {
@@ -510,7 +540,9 @@
         }
       },
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["BSD-3-Clause"],
+      "license": [
+        "BSD-3-Clause"
+      ],
       "authors": [
         {
           "name": "Greg Sherwood",
@@ -527,7 +559,11 @@
       ],
       "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
       "homepage": "https://github.com/PHPCSStandards/PHP_CodeSniffer",
-      "keywords": ["phpcs", "standards", "static analysis"],
+      "keywords": [
+        "phpcs",
+        "standards",
+        "static analysis"
+      ],
       "support": {
         "issues": "https://github.com/PHPCSStandards/PHP_CodeSniffer/issues",
         "security": "https://github.com/PHPCSStandards/PHP_CodeSniffer/security/policy",
@@ -587,7 +623,9 @@
       },
       "type": "phpcodesniffer-standard",
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["MIT"],
+      "license": [
+        "MIT"
+      ],
       "authors": [
         {
           "name": "Contributors",
@@ -595,7 +633,12 @@
         }
       ],
       "description": "PHP_CodeSniffer rules (sniffs) to enforce WordPress coding conventions",
-      "keywords": ["phpcs", "standards", "static analysis", "wordpress"],
+      "keywords": [
+        "phpcs",
+        "standards",
+        "static analysis",
+        "wordpress"
+      ],
       "support": {
         "issues": "https://github.com/WordPress/WordPress-Coding-Standards/issues",
         "source": "https://github.com/WordPress/WordPress-Coding-Standards",
@@ -639,10 +682,14 @@
         "roave/security-advisories": "dev-master",
         "yoast/phpunit-polyfills": "^1.0"
       },
-      "bin": ["bin/phpcs-check-feature-completeness"],
+      "bin": [
+        "bin/phpcs-check-feature-completeness"
+      ],
       "type": "phpcodesniffer-standard",
       "notification-url": "https://packagist.org/downloads/",
-      "license": ["LGPL-3.0-or-later"],
+      "license": [
+        "LGPL-3.0-or-later"
+      ],
       "authors": [
         {
           "name": "Juliette Reinders Folmer",
