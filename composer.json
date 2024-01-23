@@ -22,7 +22,8 @@
     "phpcsstandards/phpcsextra": "1.1.0",
     "wp-coding-standards/wpcs": "^3",
     "phpcompatibility/php-compatibility": "9.3.5",
-    "phpcompatibility/phpcompatibility-wp": "2.1.4"
+    "phpcompatibility/phpcompatibility-wp": "2.1.4",
+    "slevomat/coding-standard": "^8.14"
   },
   "require-dev": {
     "phpcsstandards/phpcsdevtools": "^1.2.0"

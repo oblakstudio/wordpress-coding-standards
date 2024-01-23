@@ -125,19 +125,44 @@ class HookCommentSniff implements Sniff
                 );
             }
 
-            $openPar = $tokens[$stackPtr + 1]['parenthesis_opener'] ?? false;
-            $ClosePar = $tokens[$stackPtr + 1]['parenthesis_closer'] ?? false;
+            $openPar = $phpcsFile->findNext(T_OPEN_PARENTHESIS, $stackPtr + 1);
+            $closePar = $tokens[$openPar]['parenthesis_closer'];
+            $firstComma = $phpcsFile->findNext(T_COMMA, $openPar + 1, $closePar);
             $argumentCount = 0;
 
-            for ($i = $openPar + 1; $i < $ClosePar; $i++) {
-                if ($tokens[$i]['code'] === T_VARIABLE) {
+            for ($i = $firstComma + 1; $i < $closePar; $i++) {
+                // Skip over nested function calls
+                if ($tokens[$i]['code'] === T_OPEN_PARENTHESIS) {
+                    $i = $tokens[$i]['parenthesis_closer'];
+                    continue;
+                }
+
+                if ($tokens[$i]['code'] === T_COMMA) {
                     $argumentCount++;
                 }
             }
 
+            // Increment for the last argument if there is one after the hook name
+            if ($tokens[$firstComma + 1]['code'] !== T_CLOSE_PARENTHESIS) {
+                $argumentCount++;
+            }
+
+            if ($argumentCount === 0 && $tokens[$stackPtr]['content'] == 'apply_filters') {
+                $phpcsFile->addWarning(
+                    'Filters need to have at least one argument.',
+                    $stackPtr,
+                    'ArgumentCountMissing'
+                );
+                return;
+            }
+
             if (count($paramTags) !== $argumentCount) {
                 $phpcsFile->addWarning(
-                    'The number of "@param" tags does not match the number of arguments in the function call.',
+                    sprintf(
+                        'The number of "@param" tags does not match the number of arguments. Found %d, expected %d',
+                        count($paramTags),
+                        $argumentCount
+                    ),
                     $stackPtr,
                     'ParamCommentMissing'
                 );

@@ -2,5 +2,6 @@
 <ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Oblak" namespace="Oblak\WordPress" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
 
     <rule ref="Oblak-Core"/>
+    <rule ref="Oblak-Slevomat"/>
     <rule ref="Oblak-Docs"/>
 </ruleset>
