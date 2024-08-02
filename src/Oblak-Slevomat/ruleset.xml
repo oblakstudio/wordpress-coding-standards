@@ -75,7 +75,7 @@
   <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses"/>
   <rule ref="SlevomatCodingStandard.ControlStructures.RequireMultiLineCondition">
     <properties>
-      <property name="minLineLength" value="111"/>
+      <property name="minLineLength" value="180"/>
       <property name="booleanOperatorOnPreviousLine" value="true"/>
       <property name="alwaysSplitAllConditionParts" value="false"/>
     </properties>
@@ -85,7 +85,7 @@
   <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullSafeObjectOperator"/>
   <rule ref="SlevomatCodingStandard.ControlStructures.RequireSingleLineCondition">
     <properties>
-      <property name="maxLineLength" value="110"/>
+      <property name="maxLineLength" value="150"/>
       <property name="alwaysForSimpleConditions" value="true"/>
     </properties>
   </rule>
@@ -149,7 +149,6 @@
   <!-- Slevomat Sniffs - Operators -->
   <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators"/>
   <rule ref="SlevomatCodingStandard.Operators.RequireCombinedAssignmentOperator"/>
-  <rule ref="SlevomatCodingStandard.Operators.SpreadOperatorSpacing"/>
 
   <!-- Slevomat Sniffs - PHP -->
   <rule ref="SlevomatCodingStandard.PHP.DisallowDirectMagicInvokeCall"/>
