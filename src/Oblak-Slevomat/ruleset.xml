@@ -15,6 +15,7 @@
   <!-- Slevomat Sniffs - Attributes -->
   <rule ref="SlevomatCodingStandard.Attributes.AttributeAndTargetSpacing">
     <properties>
+      <property name="allowOnSameLine" value="true"/>
       <property name="linesCount" value="0"/>
     </properties>
   </rule>
