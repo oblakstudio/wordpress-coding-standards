@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "a3d293d463c6c31cc4bdabaef0ad8d55",
+  "content-hash": "e8b11b46fd0c72eba0e2cc09643e0a9d",
   "packages": [
     {
       "name": "dealerdirect/phpcodesniffer-composer-installer",
@@ -523,16 +523,16 @@
     },
     {
       "name": "squizlabs/php_codesniffer",
-      "version": "3.8.1",
+      "version": "3.11.2",
       "source": {
         "type": "git",
         "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
-        "reference": "14f5fff1e64118595db5408e946f3a22c75807f7"
+        "reference": "1368f4a58c3c52114b86b1abe8f4098869cb0079"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/14f5fff1e64118595db5408e946f3a22c75807f7",
-        "reference": "14f5fff1e64118595db5408e946f3a22c75807f7",
+        "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/1368f4a58c3c52114b86b1abe8f4098869cb0079",
+        "reference": "1368f4a58c3c52114b86b1abe8f4098869cb0079",
         "shasum": ""
       },
       "require": {
@@ -599,7 +599,7 @@
           "type": "open_collective"
         }
       ],
-      "time": "2024-01-11T20:47:48+00:00"
+      "time": "2024-12-11T16:04:26+00:00"
     },
     {
       "name": "wp-coding-standards/wpcs",
@@ -736,13 +736,13 @@
   ],
   "aliases": [],
   "minimum-stability": "stable",
-  "stability-flags": [],
+  "stability-flags": {},
   "prefer-stable": false,
   "prefer-lowest": false,
   "platform": {
     "php": ">=7.4",
     "ext-filter": "*"
   },
-  "platform-dev": [],
+  "platform-dev": {},
   "plugin-api-version": "2.6.0"
 }
