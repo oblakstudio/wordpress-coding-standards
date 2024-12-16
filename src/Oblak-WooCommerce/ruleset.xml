@@ -7,6 +7,14 @@
 	-->
   <rule ref="WooCommerce"/>
 
+  <rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array" extend="true">
+				<element value="woocommerce"/>
+			</property>
+		</properties>
+	</rule>
+
   <!--
 	#############################################################################
 	Custom overrides
