@@ -24,7 +24,7 @@
   <rule ref="SlevomatCodingStandard.Attributes.RequireAttributeAfterDocComment"/>
 
   <!-- Slevomat Sniffs - Classes -->
-  <rule ref="SlevomatCodingStandard.Classes.BackedEnumTypeSpacing">
+  <rule ref="SlevomatCodingStandard.Classes.BackedEnumTypeSpacing"/>
   <rule ref="SlevomatCodingStandard.Classes.ClassMemberSpacing">
     <properties>
       <property name="linesCountBetweenMembers" value="1"/>
