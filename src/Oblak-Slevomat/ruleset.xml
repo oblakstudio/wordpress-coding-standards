@@ -24,6 +24,7 @@
   <rule ref="SlevomatCodingStandard.Attributes.RequireAttributeAfterDocComment"/>
 
   <!-- Slevomat Sniffs - Classes -->
+  <rule ref="SlevomatCodingStandard.Classes.BackedEnumTypeSpacing">
   <rule ref="SlevomatCodingStandard.Classes.ClassMemberSpacing">
     <properties>
       <property name="linesCountBetweenMembers" value="1"/>
@@ -130,10 +131,10 @@
   <rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse"/>
   <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/>
   <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions"/>
-  <rule ref="SlevomatCodingStandard.Namespaces.NamespaceDeclaration"/>
   <rule ref="SlevomatCodingStandard.Namespaces.MultipleUsesPerLine"/>
   <rule ref="SlevomatCodingStandard.Namespaces.NamespaceDeclaration"/>
   <rule ref="SlevomatCodingStandard.Namespaces.RequireOneNamespaceInFile"/>
+  <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses"/>
   <rule ref="SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash"/>
   <rule ref="SlevomatCodingStandard.Namespaces.UseSpacing">
     <properties>
@@ -143,7 +144,6 @@
     </properties>
   </rule>
   <rule ref="SlevomatCodingStandard.Namespaces.UselessAlias"/>
-  <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses"/>
 
   <!-- Slevomat Sniffs - Operators -->
   <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators"/>
