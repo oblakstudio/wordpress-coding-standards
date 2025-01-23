@@ -134,7 +134,6 @@
   <rule ref="SlevomatCodingStandard.Namespaces.MultipleUsesPerLine"/>
   <rule ref="SlevomatCodingStandard.Namespaces.NamespaceDeclaration"/>
   <rule ref="SlevomatCodingStandard.Namespaces.RequireOneNamespaceInFile"/>
-  <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses"/>
   <rule ref="SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash"/>
   <rule ref="SlevomatCodingStandard.Namespaces.UseSpacing">
     <properties>

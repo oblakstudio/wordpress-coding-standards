@@ -46,6 +46,7 @@
       </property>
 			<property name="customAutoEscapedFunctions" type="array">
         <element value="wc_price"/>
+        <element value="wc_implode_html_attributes"/>
       </property>
 		</properties>
 	</rule>
