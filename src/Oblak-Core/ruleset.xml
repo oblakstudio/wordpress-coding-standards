@@ -97,4 +97,9 @@
     <severity>10</severity>
   </rule>
 
+  <!-- Allow short ternaries because we are smart -->
+  <rule ref="Universal.Operators.DisallowShortTernary.Found">
+    <severity>0</severity>
+  </rule>
+
 </ruleset>

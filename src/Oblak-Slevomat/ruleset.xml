@@ -51,6 +51,38 @@
   <rule ref="SlevomatCodingStandard.Classes.SuperfluousTraitNaming"/>
   <rule ref="SlevomatCodingStandard.Classes.UselessLateStaticBinding"/>
 
+  <!-- Slevomat Sniffs - Class ordering -->
+  <rule ref="SlevomatCodingStandard.Classes.ClassStructure">
+    <properties>
+      <property name="methodGroups" type="array">
+        <element key="xwp-di module" value="configure define extend"/>
+        <element key="xwp-di conditional" value="can_initialize"/>
+        <element key="xwp-di initializer" value="on_initialize"/>
+      </property>
+
+      <property name="groups" type="array">
+        <element value="uses"/>
+
+        <element value="enum cases"/>
+
+        <element value="public constants, protected constants, private constants"/>
+        <element value="public static properties, protected static properties, private static properties"/>
+        <element value="public properties, protected properties, private properties"/>
+        <element value="xwp-di conditional, xwp-di module"/>
+        <element value="static methods"/>
+
+        <element value="constructor"/>
+        <element value="destructor"/>
+        <element value="magic methods"/>
+        <element value="xwp-di initializer"/>
+        <element value="public abstract methods, protected abstract methods"/>
+        <element value="public final methods, public methods"/>
+        <element value="protected final methods, protected methods"/>
+        <element value="private methods"/>
+      </property>
+    </properties>
+  </rule>
+
   <!-- Slevomat Sniffs - Commenting -->
   <rule ref="SlevomatCodingStandard.Commenting.DeprecatedAnnotationDeclaration"/>
   <rule ref="SlevomatCodingStandard.Commenting.UselessFunctionDocComment"/>
@@ -75,7 +107,7 @@
   <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses"/>
   <rule ref="SlevomatCodingStandard.ControlStructures.RequireMultiLineCondition">
     <properties>
-      <property name="minLineLength" value="180"/>
+      <property name="minLineLength" value="250"/>
       <property name="booleanOperatorOnPreviousLine" value="true"/>
       <property name="alwaysSplitAllConditionParts" value="false"/>
     </properties>
@@ -85,7 +117,7 @@
   <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullSafeObjectOperator"/>
   <rule ref="SlevomatCodingStandard.ControlStructures.RequireSingleLineCondition">
     <properties>
-      <property name="maxLineLength" value="150"/>
+      <property name="maxLineLength" value="200"/>
       <property name="alwaysForSimpleConditions" value="true"/>
     </properties>
   </rule>
